@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#first {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(93, 34, 93);
+}
+
+.name {
+    text-align: center;
+}
+
+
+.education,
+.skills,
+.projects,
+.contact {
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(130, 92, 92);
+    color: white;
+}
+
+header {
+    background-color: #887373;
+    color: black;
+    text-align: center;
+    padding:50px;
+}
+
+#profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+img{
+    padding-bottom:10px;
+}
+li {
+    padding: 5px;
+}
+
+h3 {
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(93, 34, 93);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#link {
+    padding: 130px;
+}
+
+.hidden-on-mobile {
+    display: block;
+}
+
+.nav-toggle {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.nav-toggle:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+    nav {
+        width:50%;
+        
+    }
+
+    .hidden-on-mobile {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: block;
+        position: fixed;
+        top: 35px;
+        left:0;
+        width: 30%;
+        background-color: #333;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .nav-links a {
+        display: block;
+        width:30vw;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 1px solid #555;
+    }
+}
